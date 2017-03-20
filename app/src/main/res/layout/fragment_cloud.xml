@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.meteoapp.CloudFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/cloud_base_meters_view"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/cloud_base_feet_view"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura powietrza"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/temperature_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tepmeratura punktu rosy"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/dew_point_edit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="policz"
+        android:id="@+id/cloud_count_bttn"/>
+
+
+</LinearLayout>

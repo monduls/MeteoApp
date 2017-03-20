@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.meteoapp.TemperatureFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/temperature_sum_view"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/temperature_av_view"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura z godz.7"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/temp7_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura z godz.19"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/temp19_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura maksymalna"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/temp_max_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temperatura minimalna"
+        android:inputType="number|numberDecimal"
+        android:id="@+id/temp_min_edit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="policz"
+        android:id="@+id/temperature_count_bttn"/>
+
+
+</LinearLayout>

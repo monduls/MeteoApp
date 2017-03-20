@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.meteoapp.EquivalentFragment">
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="40dp"
+      android:textAlignment="center"
+      android:textColor="@color/colorAccent"
+      android:id="@+id/equivalent_result_view" />
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="pokrywa"
+      android:inputType="number"
+      android:id="@+id/cover_edit" />
+
+  <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="podziałka"
+        android:inputType="number"
+        android:id="@+id/scale_edit" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="policz"
+        android:id="@+id/equivalent_count_bttn"/>
+
+
+
+</LinearLayout>
