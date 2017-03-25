@@ -1,17 +1,6 @@
 package com.example.lenovo.meteoapp;
 
-import android.app.Fragment;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-
-import static com.example.lenovo.meteoapp.R.id.equivalent_bttn;
-
-
-public class MasterFragment extends Fragment {
+/*public class MasterFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,4 +44,4 @@ public class MasterFragment extends Fragment {
         return view;
     }
 
-}
+}*/
