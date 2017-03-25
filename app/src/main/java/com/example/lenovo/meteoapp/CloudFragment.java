@@ -38,7 +38,7 @@ public class CloudFragment extends Fragment {
                     metersBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBase)+ " metry");
 
                     double cloudBaseFeet = cloudBase*0.33;
-                    feetBaseView.setText("Podstawa: " + String.format("%.2f", cloudBaseFeet) + " stopy");
+                    feetBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBaseFeet) + " stopy");
 
                 } catch (NumberFormatException e) {
                     metersBaseView.setText("Błędne dane");

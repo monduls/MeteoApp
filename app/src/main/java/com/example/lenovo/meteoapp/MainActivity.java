@@ -15,14 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-     //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new MyAdapter(getFragmentManager()));
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
-
-
     }
 
     class MyAdapter extends FragmentPagerAdapter {
@@ -53,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0 :
                     return "podstawa";
                 case 1 :
-                    return "temp";
+                    return "temperatura";
                 case 2 :
                     return "wilgotność";
                 case 3 :
@@ -67,34 +63,4 @@ public class MainActivity extends AppCompatActivity {
             return 4;
         }
     }
-
-  /*  public void showEquivalentView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(R.animator.enter_anim, R.animator.exit_anim);
-        transaction.replace(frame_layout, new EquivalentFragment());
-        transaction.commit();
-    }
-
-
-    public void showTemperatureView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(R.animator.enter_anim, R.animator.exit_anim);
-        transaction.replace(frame_layout, new TemperatureFragment());
-        transaction.commit();
-    }
-
-    public void showHumidityView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(R.animator.enter_anim, R.animator.exit_anim);
-        transaction.replace(frame_layout, new HumidityFragment());
-        transaction.commit();
-    }
-
-    public void showCloudView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.setCustomAnimations(R.animator.enter_anim, R.animator.exit_anim);
-        transaction.replace(frame_layout, new CloudFragment());
-        transaction.commit();
-
-    }*/
 }

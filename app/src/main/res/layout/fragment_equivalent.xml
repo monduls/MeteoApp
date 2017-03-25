@@ -29,10 +29,11 @@
         android:hint="podziałka"
         android:inputType="number"
         android:id="@+id/scale_edit" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="policz"
+        android:text="@string/bttn_count"
         android:id="@+id/equivalent_count_bttn"/>
 
 

@@ -14,6 +14,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:id="@+id/cloud_base_meters_view"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +23,7 @@
         android:paddingBottom="20dp"
         android:textColor="@color/colorAccent"
         android:id="@+id/cloud_base_feet_view"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,10 +36,11 @@
         android:hint="Tepmeratura punktu rosy"
         android:inputType="number|numberDecimal"
         android:id="@+id/dew_point_edit"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="policz"
+        android:text="@string/bttn_count"
         android:id="@+id/cloud_count_bttn"/>
 
 
