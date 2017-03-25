@@ -34,10 +34,10 @@ public class HumidityFragment extends Fragment {
                     double humidity13 = Double.parseDouble(humidity13Edit.getText().toString());
                     double humidity19 = Double.parseDouble(humidity19Edit.getText().toString());
 
-                    double resultSum = humidity7+humidity13+humidity19;
+                    double resultSum = humidity7*2+humidity13+humidity19;
                     humiditySumView.setText("Suma wilgotności: " + String.format("%.2f", resultSum));
 
-                    double resultAvg = (resultSum+humidity7)/4;
+                    double resultAvg = resultSum/4;
                     humidityAvgView.setText("Średnia wilgotność: " + String.format("%.2f", resultAvg));
 
                 }catch (NumberFormatException e) {

@@ -51,7 +51,7 @@ public class MasterFragment extends Fragment {
                 activity.showCloudView();
             }
         });
-        
+
         return view;
     }
 

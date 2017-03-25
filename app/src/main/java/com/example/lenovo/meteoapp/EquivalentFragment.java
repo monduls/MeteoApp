@@ -32,7 +32,7 @@ public class EquivalentFragment extends Fragment {
                 try{
                     int cover = parseInt(coverEdit.getText().toString());
                     double scale = Double.parseDouble(scaleEdit.getText().toString());
-                    double result = cover/(scale/10);
+                    double result = scale*10/cover;
                             //depositLogic.calc(amount, percent, years);
 
                     resultView.setText(String.format("%.2f",result));
