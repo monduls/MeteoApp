@@ -28,13 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Temperatura powietrza"
-        android:inputType="number|numberDecimal"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/temperature_edit"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tepmeratura punktu rosy"
-        android:inputType="number|numberDecimal"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/dew_point_edit"/>
 
     <Button

@@ -33,7 +33,7 @@ public class EquivalentFragment extends Fragment {
                     int cover = parseInt(coverEdit.getText().toString());
                     double scale = Double.parseDouble(scaleEdit.getText().toString());
                     double result = scale*10/cover;
-                    resultView.setText(String.format("%.2f",result));
+                    resultView.setText("Równoważnik wodny śniegu: " + String.format("%.2f",result));
                 }catch (NumberFormatException e) {
                     resultView.setText("Błędne dane");
                 }

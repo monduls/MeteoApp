@@ -27,21 +27,21 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wilgotność z godz.7"
+        android:hint="Wilgotność z godz.7/8"
         android:inputType="number|numberDecimal"
         android:id="@+id/humidity7_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wilgotność z godz.13"
+        android:hint="Wilgotność z godz.13/14"
         android:inputType="number|numberDecimal"
         android:id="@+id/humidity13_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wilgotność z godz.19"
+        android:hint="Wilgotność z godz.19/20"
         android:inputType="number|numberDecimal"
         android:id="@+id/humidity19_edit"/>
 

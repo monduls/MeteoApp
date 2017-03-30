@@ -32,13 +32,17 @@ public class CloudFragment extends Fragment {
                 try {
                     double temp = Double.parseDouble(temperatureEdit.getText().toString());
                     double dew = Double.parseDouble(dewPointEdit.getText().toString());
-
-
+                    if(dew>temp){
+                        metersBaseView.setText("Temp. punktu rosy wyższa niż temperatura powietrza");
+                        feetBaseView.setText("Wprowadź poprawne dane");
+                    }
+                    else {
                     double cloudBase = (temp-dew)*125;
-                    metersBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBase)+ " metry");
+                    metersBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBase)+ " m");
 
                     double cloudBaseFeet = cloudBase*0.33;
-                    feetBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBaseFeet) + " stopy");
+                    feetBaseView.setText("Podstawa chmur: " + String.format("%.2f", cloudBaseFeet) + " ft");}
+
 
                 } catch (NumberFormatException e) {
                     metersBaseView.setText("Błędne dane");

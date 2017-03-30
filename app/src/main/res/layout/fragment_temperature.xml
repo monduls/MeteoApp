@@ -26,29 +26,29 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Temperatura z godz.7"
-        android:inputType="number|numberDecimal"
+        android:hint="Temperatura z godz.7/8"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/temp7_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Temperatura z godz.19"
-        android:inputType="number|numberDecimal"
+        android:hint="Temperatura z godz.19/20"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/temp19_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Temperatura maksymalna"
-        android:inputType="number|numberDecimal"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/temp_max_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Temperatura minimalna"
-        android:inputType="number|numberDecimal"
+        android:inputType="number|numberSigned|numberDecimal"
         android:id="@+id/temp_min_edit"/>
 
     <Button
